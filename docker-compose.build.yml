@@ -1,0 +1,68 @@
+version: '3'
+services:
+  nginx:
+    image: nginx:1.15-alpine
+    container_name: mynginx
+    ports:
+      - "80:80"
+    volumes:
+      - ${DIR_WWW}:${DIR_WWW}:rw
+      - ./conf/nginx/conf.d:/etc/nginx/conf.d/:ro
+      - ./conf/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./log/nginx/:/var/log/nginx/:rw
+    networks:
+      - front
+
+  phpfpm:
+    image: raven666/ct-phpfpm:v1
+    container_name: myphpfpm
+    build:
+      context: .
+      dockerfile: Dockerfile
+    expose:
+      - "9000"
+    volumes:
+      - ${DIR_WWW}:${DIR_WWW}:rw
+      - ./conf/php/php.ini:/usr/local/etc/php/php.ini:ro
+      - ./conf/php/php-fpm.d/www.conf:/usr/local/etc/php-fpm.d/www.conf:rw
+      - ./conf/supervisor/conf.d:/etc/supervisor/conf.d/:ro
+      - ./log/php-fpm/:/var/log/php-fpm/:rw
+      - ./log/supervisor/:/var/log/supervisor/:rw
+    command: supervisord -n
+    networks:
+      - front
+      - backend
+      
+  mysql:
+    image: mysql:5.7
+    container_name: mymysql
+    env_file: .env
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./conf/mysql/mysql.cnf:/etc/mysql/conf.d/mysql.cnf:ro
+      - ${DIR_MYSQL_DATA}:/var/lib/mysql/:rw
+      - ./log/mysql/:/var/log/mysql/:rw
+    environment:
+      MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
+      MYSQL_DATABASE: "${MYSQL_DATABASE}"
+    networks:
+      - backend
+
+  redis:
+    image: redis:latest
+    container_name: myredis
+    env_file: .env
+    command: redis-server --requirepass "${REDIS_PASSWORD}" --appendonly yes
+    ports:
+      - "6379:6379"
+    volumes:
+      - ${DIR_REDIS_DATA}:/data
+    networks:
+      - backend
+
+networks:
+  front:
+  backend:
+    
+    
