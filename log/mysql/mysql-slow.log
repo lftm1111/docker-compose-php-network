@@ -1,0 +1,190 @@
+mysqld, Version: 5.7.24-log (MySQL Community Server (GPL)). started with:
+Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.24-log (MySQL Community Server (GPL)). started with:
+Tcp port: 0  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+# Time: 2018-12-20T07:44:07.258047Z
+# User@Host: root[root] @ localhost []  Id:     3
+# Query_time: 3.163656  Lock_time: 0.000146 Rows_sent: 0  Rows_examined: 0
+use mysql;
+SET timestamp=1545291847;
+INSERT INTO time_zone_transition (Time_zone_id, Transition_time, Transition_type_id) VALUES
+ (@time_zone_id, -2147483648, 0)
+,(@time_zone_id, -1262281242, 1)
+,(@time_zone_id, 136360803, 2)
+,(@time_zone_id, 152082003, 1)
+,(@time_zone_id, 167810404, 2)
+,(@time_zone_id, 183531604, 1)
+,(@time_zone_id, 199260005, 2)
+,(@time_zone_id, 215586005, 1)
+,(@time_zone_id, 230709606, 2)
+,(@time_zone_id, 247035606, 1)
+,(@time_zone_id, 262764007, 2)
+,(@time_zone_id, 278485207, 1)
+,(@time_zone_id, 294213608, 2)
+,(@time_zone_id, 309934808, 1)
+,(@time_zone_id, 325663209, 2)
+,(@time_zone_id, 341384409, 1)
+,(@time_zone_id, 357112809, 2)
+,(@time_zone_id, 372834010, 1)
+,(@time_zone_id, 388562410, 2)
+,(@time_zone_id, 404888411, 1)
+,(@time_zone_id, 420012011, 2)
+,(@time_zone_id, 436338012, 1)
+,(@time_zone_id, 452066412, 2)
+,(@time_zone_id, 467787612, 1)
+,(@time_zone_id, 483516012, 2)
+,(@time_zone_id, 499237213, 1)
+,(@time_zone_id, 514965613, 2)
+,(@time_zone_id, 530686813, 1)
+,(@time_zone_id, 544600813, 2)
+,(@time_zone_id, 562136413, 1)
+,(@time_zone_id, 576050414, 2)
+,(@time_zone_id, 594190814, 1)
+,(@time_zone_id, 607500014, 2)
+,(@time_zone_id, 625640414, 1)
+,(@time_zone_id, 638949615, 2)
+,(@time_zone_id, 657090015, 1)
+,(@time_zone_id, 671004016, 2)
+,(@time_zone_id, 688539616, 1)
+,(@time_zone_id, 702453616, 2)
+,(@time_zone_id, 719989217, 1)
+,(@time_zone_id, 733903217, 2)
+,(@time_zone_id, 752043618, 1)
+,(@time_zone_id, 765352818, 2)
+,(@time_zone_id, 783493219, 1)
+,(@time_zone_id, 796802419, 2)
+,(@time_zone_id, 814942819, 1)
+,(@time_zone_id, 828856820, 2)
+,(@time_zone_id, 846392420, 1)
+,(@time_zone_id, 860306420, 2)
+,(@time_zone_id, 877842021, 1)
+,(@time_zone_id, 891756021, 2)
+,(@time_zone_id, 909291621, 1)
+,(@time_zone_id, 923205622, 2)
+,(@time_zone_id, 941346022, 1)
+,(@time_zone_id, 954655222, 2)
+,(@time_zone_id, 972795622, 1)
+,(@time_zone_id, 986104822, 2)
+,(@time_zone_id, 1004245222, 1)
+,(@time_zone_id, 1018159222, 2)
+,(@time_zone_id, 1035694822, 1)
+,(@time_zone_id, 1049608822, 2)
+,(@time_zone_id, 1067144422, 1)
+,(@time_zone_id, 1081058422, 2)
+,(@time_zone_id, 1099198822, 1)
+,(@time_zone_id, 1112508022, 2)
+,(@time_zone_id, 1130648422, 1)
+,(@time_zone_id, 1143957623, 2)
+,(@time_zone_id, 1162098023, 1)
+,(@time_zone_id, 1173592823, 2)
+,(@time_zone_id, 1194152423, 1)
+,(@time_zone_id, 1205042423, 2)
+,(@time_zone_id, 1225602023, 1)
+,(@time_zone_id, 1236492024, 2)
+,(@time_zone_id, 1257051624, 1)
+,(@time_zone_id, 1268546424, 2)
+,(@time_zone_id, 1289106024, 1)
+,(@time_zone_id, 1299996024, 2)
+,(@time_zone_id, 1320555624, 1)
+,(@time_zone_id, 1331445624, 2)
+,(@time_zone_id, 1352005225, 1)
+,(@time_zone_id, 1362895225, 2)
+,(@time_zone_id, 1383454825, 1)
+,(@time_zone_id, 1394344825, 2)
+,(@time_zone_id, 1414904425, 1)
+,(@time_zone_id, 1425794425, 2)
+,(@time_zone_id, 1446354026, 1)
+,(@time_zone_id, 1457848826, 2)
+,(@time_zone_id, 1478408426, 1)
+,(@time_zone_id, 1489298427, 2)
+,(@time_zone_id, 1509858027, 1)
+,(@time_zone_id, 1520748027, 2)
+,(@time_zone_id, 1541307627, 1)
+,(@time_zone_id, 1552197627, 2)
+,(@time_zone_id, 1572757227, 1)
+,(@time_zone_id, 1583647227, 2)
+,(@time_zone_id, 1604206827, 1)
+,(@time_zone_id, 1615701627, 2)
+,(@time_zone_id, 1636261227, 1)
+,(@time_zone_id, 1647151227, 2)
+,(@time_zone_id, 1667710827, 1)
+,(@time_zone_id, 1678600827, 2)
+,(@time_zone_id, 1699160427, 1)
+,(@time_zone_id, 1710050427, 2)
+,(@time_zone_id, 1730610027, 1)
+,(@time_zone_id, 1741500027, 2)
+,(@time_zone_id, 1762059627, 1)
+,(@time_zone_id, 1772949627, 2)
+,(@time_zone_id, 1793509227, 1)
+,(@time_zone_id, 1805004027, 2)
+,(@time_zone_id, 1825563627, 1)
+,(@time_zone_id, 1836453627, 2)
+,(@time_zone_id, 1857013227, 1)
+,(@time_zone_id, 1867903227, 2)
+,(@time_zone_id, 1888462827, 1)
+,(@time_zone_id, 1899352827, 2)
+,(@time_zone_id, 1919912427, 1)
+,(@time_zone_id, 1930802427, 2)
+,(@time_zone_id, 1951362027, 1)
+,(@time_zone_id, 1962856827, 2)
+,(@time_zone_id, 1983416427, 1)
+,(@time_zone_id, 1994306427, 2)
+,(@time_zone_id, 2014866027, 1)
+,(@time_zone_id, 2025756027, 2)
+,(@time_zone_id, 2046315627, 1)
+,(@time_zone_id, 2057205627, 2)
+,(@time_zone_id, 2077765227, 1)
+,(@time_zone_id, 2088655227, 2)
+,(@time_zone_id, 2109214827, 1)
+,(@time_zone_id, 2120104827, 2)
+,(@time_zone_id, 2140664427, 1);
+mysqld, Version: 5.7.24-log (MySQL Community Server (GPL)). started with:
+Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+# Time: 2018-12-20T08:20:53.588237Z
+# User@Host: root[root] @  [172.19.0.1]  Id:     3
+# Query_time: 0.270664  Lock_time: 0.000094 Rows_sent: 280  Rows_examined: 560
+SET timestamp=1545294053;
+SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE FROM information_schema.TABLES ORDER BY TABLE_SCHEMA, TABLE_TYPE;
+# Time: 2018-12-20T08:20:53.694934Z
+# User@Host: root[root] @  [172.19.0.1]  Id:     3
+# Query_time: 0.100382  Lock_time: 0.058067 Rows_sent: 3077  Rows_examined: 6154
+SET timestamp=1545294053;
+SELECT TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME, COLUMN_TYPE FROM information_schema.COLUMNS ORDER BY TABLE_SCHEMA, TABLE_NAME;
+# Time: 2018-12-20T08:20:53.986443Z
+# User@Host: root[root] @  [172.19.0.1]  Id:     3
+# Query_time: 0.004010  Lock_time: 0.002257 Rows_sent: 48  Rows_examined: 350
+SET timestamp=1545294053;
+SELECT DISTINCT ROUTINE_SCHEMA, ROUTINE_NAME, PARAMS.PARAMETER FROM information_schema.ROUTINES LEFT JOIN ( SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, GROUP_CONCAT(CONCAT(DATA_TYPE, ' ', PARAMETER_NAME) ORDER BY ORDINAL_POSITION SEPARATOR ', ') PARAMETER, ROUTINE_TYPE FROM information_schema.PARAMETERS GROUP BY SPECIFIC_SCHEMA, SPECIFIC_NAME, ROUTINE_TYPE ) PARAMS ON ROUTINES.ROUTINE_SCHEMA = PARAMS.SPECIFIC_SCHEMA AND ROUTINES.ROUTINE_NAME = PARAMS.SPECIFIC_NAME AND ROUTINES.ROUTINE_TYPE = PARAMS.ROUTINE_TYPE ORDER BY ROUTINE_SCHEMA;
+# Time: 2018-12-21T10:00:51.341020Z
+# User@Host: root[root] @  [172.19.0.1]  Id:     4
+# Query_time: 0.113154  Lock_time: 0.001166 Rows_sent: 280  Rows_examined: 560
+SET timestamp=1545386451;
+SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE FROM information_schema.TABLES ORDER BY TABLE_SCHEMA, TABLE_TYPE;
+# Time: 2018-12-21T10:00:51.559472Z
+# User@Host: root[root] @  [172.19.0.1]  Id:     4
+# Query_time: 0.198658  Lock_time: 0.130861 Rows_sent: 3077  Rows_examined: 6154
+SET timestamp=1545386451;
+SELECT TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME, COLUMN_TYPE FROM information_schema.COLUMNS ORDER BY TABLE_SCHEMA, TABLE_NAME;
+# Time: 2018-12-21T10:00:51.986123Z
+# User@Host: root[root] @  [172.19.0.1]  Id:     4
+# Query_time: 0.010853  Lock_time: 0.005787 Rows_sent: 48  Rows_examined: 350
+SET timestamp=1545386451;
+SELECT DISTINCT ROUTINE_SCHEMA, ROUTINE_NAME, PARAMS.PARAMETER FROM information_schema.ROUTINES LEFT JOIN ( SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, GROUP_CONCAT(CONCAT(DATA_TYPE, ' ', PARAMETER_NAME) ORDER BY ORDINAL_POSITION SEPARATOR ', ') PARAMETER, ROUTINE_TYPE FROM information_schema.PARAMETERS GROUP BY SPECIFIC_SCHEMA, SPECIFIC_NAME, ROUTINE_TYPE ) PARAMS ON ROUTINES.ROUTINE_SCHEMA = PARAMS.SPECIFIC_SCHEMA AND ROUTINES.ROUTINE_NAME = PARAMS.SPECIFIC_NAME AND ROUTINES.ROUTINE_TYPE = PARAMS.ROUTINE_TYPE ORDER BY ROUTINE_SCHEMA;
+# Time: 2018-12-21T10:08:36.315857Z
+# User@Host: root[root] @  [172.19.0.1]  Id:     5
+# Query_time: 0.052043  Lock_time: 0.000124 Rows_sent: 280  Rows_examined: 560
+SET timestamp=1545386916;
+SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE FROM information_schema.TABLES ORDER BY TABLE_SCHEMA, TABLE_TYPE;
+# Time: 2018-12-21T10:08:36.470094Z
+# User@Host: root[root] @  [172.19.0.1]  Id:     5
+# Query_time: 0.143176  Lock_time: 0.087386 Rows_sent: 3077  Rows_examined: 6154
+SET timestamp=1545386916;
+SELECT TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME, COLUMN_TYPE FROM information_schema.COLUMNS ORDER BY TABLE_SCHEMA, TABLE_NAME;
+# Time: 2018-12-21T10:08:36.820492Z
+# User@Host: root[root] @  [172.19.0.1]  Id:     5
+# Query_time: 0.007356  Lock_time: 0.005412 Rows_sent: 48  Rows_examined: 350
+SET timestamp=1545386916;
+SELECT DISTINCT ROUTINE_SCHEMA, ROUTINE_NAME, PARAMS.PARAMETER FROM information_schema.ROUTINES LEFT JOIN ( SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, GROUP_CONCAT(CONCAT(DATA_TYPE, ' ', PARAMETER_NAME) ORDER BY ORDINAL_POSITION SEPARATOR ', ') PARAMETER, ROUTINE_TYPE FROM information_schema.PARAMETERS GROUP BY SPECIFIC_SCHEMA, SPECIFIC_NAME, ROUTINE_TYPE ) PARAMS ON ROUTINES.ROUTINE_SCHEMA = PARAMS.SPECIFIC_SCHEMA AND ROUTINES.ROUTINE_NAME = PARAMS.SPECIFIC_NAME AND ROUTINES.ROUTINE_TYPE = PARAMS.ROUTINE_TYPE ORDER BY ROUTINE_SCHEMA;

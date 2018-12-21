@@ -45,7 +45,6 @@ services:
       - ./log/mysql/:/var/log/mysql/:rw
     environment:
       MYSQL_ROOT_PASSWORD: "${MYSQL_ROOT_PASSWORD}"
-      MYSQL_DATABASE: "${MYSQL_DATABASE}"
     networks:
       - backend
 
