@@ -1,37 +1,37 @@
-使用方法及详细的解释请参考我的博客：
+# 使用方法及详细的解释请参考我的博客：
 1、centOS下需要升级 yum —— 不然可能会有一些神经病的错误发生
-yum update
+	yum update
 
 2、将已经写好的 yml 包以及 Dockerfile 等下载到根目录：
-git clone https://github.com/lftm1111/docker-compose-php-network.git
+	git clone https://github.com/lftm1111/docker-compose-php-network.git
 
 3、进入 docker-composer-php 目录，即 docker-compose.yml 所在的目录
-cd docker-compose-php-network
+	cd docker-compose-php-network
 
 4、配置并修改.env 文件
-cp .env.example .env
-vim .env
+	cp .env.example .env
+	vim .env
 
-建议配置：
+# 建议配置：
 // mac上
-DIR_WWW=/Users/linfeng/docker/data/www/
-DIR_REDIS_DATA=/Users/linfeng/docker/data/redis/
-DIR_MYSQL_DATA=/Users/linfeng/docker/data/mysql/
+	DIR_WWW=/Users/linfeng/docker/data/www/
+	DIR_REDIS_DATA=/Users/linfeng/docker/data/redis/
+	DIR_MYSQL_DATA=/Users/linfeng/docker/data/mysql/
 
 // centOS 上
-DIR_WWW=/data/www/
-DIR_REDIS_DATA=/data/redis/
-DIR_MYSQL_DATA=/data/mysql/
+	DIR_WWW=/data/www/
+	DIR_REDIS_DATA=/data/redis/
+	DIR_MYSQL_DATA=/data/mysql/
 
 5、运行
-docker-compose up -d   (建议使用这种)
-或者
+	docker-compose up -d   (建议使用这种)
+# 或者
 docker-compose -f docker-compose.build.yml up -d
 
 6、重启 nginx 容器
-docker-compose restart nginx
+	docker-compose restart nginx
 
-nginx虚拟主机示例：
+#nginx虚拟主机示例：
 server {
     listen       80;
 
@@ -54,7 +54,7 @@ server {
     }
 }
 
-最后：
-—— 项目目录：/data/www
+#最后：
+
 —— 项目目录：/data/www
 —— 虚拟主机配置目录：/docker-compose-php/conf/nginx/conf.d
