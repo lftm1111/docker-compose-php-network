@@ -188,3 +188,128 @@ SELECT TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME, COLUMN_TYPE FROM information_schem
 # Query_time: 0.007356  Lock_time: 0.005412 Rows_sent: 48  Rows_examined: 350
 SET timestamp=1545386916;
 SELECT DISTINCT ROUTINE_SCHEMA, ROUTINE_NAME, PARAMS.PARAMETER FROM information_schema.ROUTINES LEFT JOIN ( SELECT SPECIFIC_SCHEMA, SPECIFIC_NAME, GROUP_CONCAT(CONCAT(DATA_TYPE, ' ', PARAMETER_NAME) ORDER BY ORDINAL_POSITION SEPARATOR ', ') PARAMETER, ROUTINE_TYPE FROM information_schema.PARAMETERS GROUP BY SPECIFIC_SCHEMA, SPECIFIC_NAME, ROUTINE_TYPE ) PARAMS ON ROUTINES.ROUTINE_SCHEMA = PARAMS.SPECIFIC_SCHEMA AND ROUTINES.ROUTINE_NAME = PARAMS.SPECIFIC_NAME AND ROUTINES.ROUTINE_TYPE = PARAMS.ROUTINE_TYPE ORDER BY ROUTINE_SCHEMA;
+# Time: 2018-12-21T13:42:00.199175Z
+# User@Host: root[root] @  [172.19.0.1]  Id:     5
+# Query_time: 0.004526  Lock_time: 0.000106 Rows_sent: 22  Rows_examined: 44
+use laravel;
+SET timestamp=1545399720;
+SELECT DISTINCT(TABLESPACE_NAME) AS TABLESPACE_NAME FROM information_schema.FILES WHERE NOT ISNULL(TABLESPACE_NAME);
+# Time: 2018-12-21T13:43:34.462948Z
+# User@Host: root[root] @  [172.19.0.1]  Id:     7
+# Query_time: 0.029696  Lock_time: 0.001191 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1545399814;
+SELECT action_order, event_object_table, trigger_name, event_manipulation, event_object_table, definer, action_statement, action_timing FROM information_schema.triggers WHERE BINARY event_object_schema = 'laravel' AND BINARY event_object_table = 'test' ORDER BY event_object_table;
+# Time: 2018-12-21T13:43:34.509662Z
+# User@Host: root[root] @  [172.19.0.1]  Id:     5
+# Query_time: 0.030015  Lock_time: 0.000210 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1545399814;
+SELECT action_order, event_object_table, trigger_name, event_manipulation, event_object_table, definer, action_statement, action_timing FROM information_schema.triggers WHERE BINARY event_object_schema = 'laravel' AND BINARY event_object_table = 'test' ORDER BY event_object_table;
+# Time: 2018-12-21T13:43:34.542679Z
+# User@Host: root[root] @  [172.19.0.1]  Id:     5
+# Query_time: 0.029870  Lock_time: 0.000728 Rows_sent: 0  Rows_examined: 1
+SET timestamp=1545399814;
+SELECT TABLE_NAME, PARTITION_NAME, SUBPARTITION_NAME, PARTITION_METHOD, SUBPARTITION_METHOD, PARTITION_EXPRESSION, SUBPARTITION_EXPRESSION, PARTITION_DESCRIPTION, PARTITION_COMMENT, NODEGROUP, TABLESPACE_NAME FROM information_schema.PARTITIONS WHERE NOT ISNULL(PARTITION_NAME) AND TABLE_SCHEMA LIKE 'laravel' AND TABLE_NAME LIKE 'test' ORDER BY TABLE_NAME, PARTITION_NAME, PARTITION_ORDINAL_POSITION, SUBPARTITION_ORDINAL_POSITION;
+# Time: 2018-12-21T13:43:34.744785Z
+# User@Host: root[root] @  [172.19.0.1]  Id:     7
+# Query_time: 0.025639  Lock_time: 0.000611 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1545399814;
+SELECT action_order, event_object_table, trigger_name, event_manipulation, event_object_table, definer, action_statement, action_timing FROM information_schema.triggers WHERE BINARY event_object_schema = 'laravel' AND BINARY event_object_table = 'test' ORDER BY event_object_table;
+# Time: 2018-12-21T13:43:36.180061Z
+# User@Host: root[root] @  [172.19.0.1]  Id:     7
+# Query_time: 0.046419  Lock_time: 0.000729 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1545399816;
+SELECT action_order, event_object_table, trigger_name, event_manipulation, event_object_table, definer, action_statement, action_timing FROM information_schema.triggers WHERE BINARY event_object_schema = 'laravel' AND BINARY event_object_table = 'test' ORDER BY event_object_table;
+# Time: 2018-12-21T13:43:36.196989Z
+# User@Host: root[root] @  [172.19.0.1]  Id:     9
+# Query_time: 0.043049  Lock_time: 0.000678 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1545399816;
+SELECT action_order, event_object_table, trigger_name, event_manipulation, event_object_table, definer, action_statement, action_timing FROM information_schema.triggers WHERE BINARY event_object_schema = 'laravel' AND BINARY event_object_table = 'test' ORDER BY event_object_table;
+# Time: 2018-12-21T13:43:36.257670Z
+# User@Host: root[root] @  [172.19.0.1]  Id:     7
+# Query_time: 0.032101  Lock_time: 0.000595 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1545399816;
+SELECT action_order, event_object_table, trigger_name, event_manipulation, event_object_table, definer, action_statement, action_timing FROM information_schema.triggers WHERE BINARY event_object_schema = 'laravel' AND BINARY event_object_table = 'test' ORDER BY event_object_table;
+# Time: 2018-12-21T13:43:36.262053Z
+# User@Host: root[root] @  [172.19.0.1]  Id:     9
+# Query_time: 0.027704  Lock_time: 0.002264 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1545399816;
+SELECT action_order, event_object_table, trigger_name, event_manipulation, event_object_table, definer, action_statement, action_timing FROM information_schema.triggers WHERE BINARY event_object_schema = 'laravel' AND BINARY event_object_table = 'test' ORDER BY event_object_table;
+# Time: 2018-12-21T13:43:37.741802Z
+# User@Host: root[root] @  [172.19.0.1]  Id:     5
+# Query_time: 0.001090  Lock_time: 0.000784 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1545399817;
+SELECT * FROM `laravel`.`test` LIMIT 0, 1000;
+# Time: 2018-12-21T13:43:37.831741Z
+# User@Host: root[root] @  [172.19.0.1]  Id:     7
+# Query_time: 0.030564  Lock_time: 0.000517 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1545399817;
+SELECT action_order, event_object_table, trigger_name, event_manipulation, event_object_table, definer, action_statement, action_timing FROM information_schema.triggers WHERE BINARY event_object_schema = 'laravel' AND BINARY event_object_table = 'test' ORDER BY event_object_table;
+# Time: 2018-12-21T13:43:37.834086Z
+# User@Host: root[root] @  [172.19.0.1]  Id:     9
+# Query_time: 0.023811  Lock_time: 0.000250 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1545399817;
+SELECT action_order, event_object_table, trigger_name, event_manipulation, event_object_table, definer, action_statement, action_timing FROM information_schema.triggers WHERE BINARY event_object_schema = 'laravel' AND BINARY event_object_table = 'test' ORDER BY event_object_table;
+# Time: 2018-12-21T13:47:59.395701Z
+# User@Host: root[root] @  [172.19.0.2]  Id:    10
+# Query_time: 0.000152  Lock_time: 0.000044 Rows_sent: 2  Rows_examined: 2
+SET timestamp=1545400079;
+select * from `test`;
+# Time: 2018-12-21T13:48:05.649525Z
+# User@Host: root[root] @  [172.19.0.2]  Id:    11
+# Query_time: 0.000115  Lock_time: 0.000031 Rows_sent: 2  Rows_examined: 2
+SET timestamp=1545400085;
+select * from `test`;
+# Time: 2018-12-21T13:48:25.093957Z
+# User@Host: root[root] @  [172.19.0.2]  Id:    12
+# Query_time: 0.000188  Lock_time: 0.000049 Rows_sent: 2  Rows_examined: 2
+SET timestamp=1545400105;
+select * from `test`;
+# Time: 2018-12-21T13:48:35.773502Z
+# User@Host: root[root] @  [172.19.0.2]  Id:    13
+# Query_time: 0.000136  Lock_time: 0.000039 Rows_sent: 2  Rows_examined: 2
+SET timestamp=1545400115;
+select * from `test`;
+# Time: 2018-12-21T13:48:46.393918Z
+# User@Host: root[root] @  [172.19.0.2]  Id:    14
+# Query_time: 0.000150  Lock_time: 0.000057 Rows_sent: 2  Rows_examined: 2
+SET timestamp=1545400126;
+select * from `test`;
+# Time: 2018-12-21T13:48:54.409174Z
+# User@Host: root[root] @  [172.19.0.2]  Id:    15
+# Query_time: 0.000365  Lock_time: 0.000107 Rows_sent: 2  Rows_examined: 2
+SET timestamp=1545400134;
+select * from `test`;
+# Time: 2018-12-21T13:49:00.350350Z
+# User@Host: root[root] @  [172.19.0.2]  Id:    16
+# Query_time: 0.000372  Lock_time: 0.000235 Rows_sent: 2  Rows_examined: 2
+SET timestamp=1545400140;
+select * from `test`;
+# Time: 2018-12-21T13:49:00.809309Z
+# User@Host: root[root] @  [172.19.0.2]  Id:    17
+# Query_time: 0.000352  Lock_time: 0.000032 Rows_sent: 2  Rows_examined: 2
+SET timestamp=1545400140;
+select * from `test`;
+# Time: 2018-12-21T13:53:48.180789Z
+# User@Host: root[root] @  [172.19.0.1]  Id:     5
+# Query_time: 0.000319  Lock_time: 0.000115 Rows_sent: 2  Rows_examined: 2
+SET timestamp=1545400428;
+SELECT * FROM `laravel`.`test` LIMIT 0, 1000;
+# Time: 2018-12-22T12:41:03.280146Z
+# User@Host: root[root] @  [172.19.0.1]  Id:    20
+# Query_time: 0.072658  Lock_time: 0.011787 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1545482463;
+SELECT action_order, event_object_table, trigger_name, event_manipulation, event_object_table, definer, action_statement, action_timing FROM information_schema.triggers WHERE BINARY event_object_schema = 'laravel' AND BINARY event_object_table = 'test' ORDER BY event_object_table;
+# Time: 2018-12-22T12:41:03.280266Z
+# User@Host: root[root] @  [172.19.0.1]  Id:    21
+# Query_time: 0.063188  Lock_time: 0.006185 Rows_sent: 0  Rows_examined: 0
+SET timestamp=1545482463;
+SELECT action_order, event_object_table, trigger_name, event_manipulation, event_object_table, definer, action_statement, action_timing FROM information_schema.triggers WHERE BINARY event_object_schema = 'laravel' AND BINARY event_object_table = 'test' ORDER BY event_object_table;
+mysqld, Version: 5.7.24-log (MySQL Community Server (GPL)). started with:
+Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.24-log (MySQL Community Server (GPL)). started with:
+Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument
+mysqld, Version: 5.7.24-log (MySQL Community Server (GPL)). started with:
+Tcp port: 3306  Unix socket: /var/run/mysqld/mysqld.sock
+Time                 Id Command    Argument

@@ -1,0 +1,4 @@
+[24-Dec-2018 03:55:27] NOTICE: fpm is running, pid 8
+[24-Dec-2018 03:55:27] NOTICE: ready to handle connections
+172.26.0.2 -  24/Dec/2018:03:55:35 +0000 "GET /index.php" 200
+172.26.0.2 -  24/Dec/2018:03:55:36 +0000 "GET /index.php" 200
